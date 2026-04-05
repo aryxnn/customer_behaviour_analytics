@@ -164,22 +164,7 @@ source sql/customer_behaviour.sql;
 
 ---
 
-## 🎯 Future Improvements
-
-- 🚀 Automate pipeline using Airflow  
-- ☁️ Deploy dashboard to cloud (Power BI Service)  
-- 🤖 Add ML models for customer segmentation  
-- 📡 Real-time data streaming  
-
----
-
 ## 👨‍💻 Author
 
 **Aryan Srivastava**  
-Aspiring Data Analyst  
 
----
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub — it helps a lot!
