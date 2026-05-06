@@ -1,10 +1,10 @@
-# 📊 Customer Behaviour Data Pipeline & Analytics
+#  Customer Behaviour Data Pipeline & Analytics
 
 An end-to-end **data engineering + analytics project** that transforms raw customer shopping data into actionable business insights using **Python, MySQL, and Power BI**.
 
 ---
 
-## 🖼️ Dashboard Preview
+##  Dashboard Preview
 
 ![Dashboard](./assets/dashboard.png)
 
@@ -12,20 +12,20 @@ An end-to-end **data engineering + analytics project** that transforms raw custo
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This project demonstrates a complete data pipeline:
 
-- 📥 Raw data ingestion from CSV  
-- 🧹 Data cleaning & preprocessing using Python (Pandas)  
-- 🗄️ Data storage and querying using MySQL  
-- 📊 Interactive dashboard creation using Power BI  
+-  Raw data ingestion from CSV  
+-  Data cleaning & preprocessing using Python (Pandas)  
+-  Data storage and querying using MySQL  
+-  Interactive dashboard creation using Power BI  
 
 The objective is to analyze **customer purchasing behavior, revenue trends, and business performance**.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python (Pandas)** → Data cleaning & transformation  
 - **MySQL** → Data storage & analytical queries  
@@ -35,10 +35,10 @@ The objective is to analyze **customer purchasing behavior, revenue trends, and 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
-📦 Customer-Behaviour-Analytics
+ Customer-Behaviour-Analytics
 ├── data/
 │   └── cust_shopping_behavior.csv
 ├── notebooks/
@@ -54,32 +54,32 @@ The objective is to analyze **customer purchasing behavior, revenue trends, and 
 
 ---
 
-## 🔄 Data Pipeline Workflow
+##  Data Pipeline Workflow
 
-### 1️⃣ Data Cleaning (Python)
+### 1. Data Cleaning (Python)
 - Handled missing values (median imputation)
 - Converted data types
 - Ensured data consistency and quality
 
 ---
 
-### 2️⃣ Data Migration (MySQL)
+### 2. Data Migration (MySQL)
 - Created database: `customer_behaviour`
 - Loaded cleaned data into SQL tables
 - Used SQLAlchemy for seamless integration
 
 ---
 
-### 3️⃣ Data Analysis (SQL)
+### 3. Data Analysis (SQL)
 
-#### 💰 Revenue by Gender
+####  Revenue by Gender
 ```sql
 SELECT gender, SUM(purchase_amount) AS revenue
 FROM customer
 GROUP BY gender;
 ```
 
-#### ⭐ Top Rated Products
+####  Top Rated Products
 ```sql
 SELECT item_purchased, ROUND(AVG(review_rating),2)
 FROM customer
@@ -88,7 +88,7 @@ ORDER BY AVG(review_rating) DESC
 LIMIT 5;
 ```
 
-#### 🎯 Discount Effectiveness
+####  Discount Effectiveness
 ```sql
 SELECT item_purchased,
 ROUND(100.0 * SUM(CASE WHEN discount_applied='Yes' THEN 1 ELSE 0 END)/COUNT(*),2)
@@ -103,21 +103,21 @@ More queries available in:
 
 ---
 
-## 📊 Dashboard Features
+##  Dashboard Features
 
-- 📌 KPI Cards:
+-  KPI Cards:
   - Total Customers (3.9K)
   - Average Purchase Amount ($59.76)
   - Average Rating (3.75)
 
-- 📦 Category Analysis:
+-  Category Analysis:
   - Revenue & sales breakdown by category
 
-- 👥 Customer Insights:
+-  Customer Insights:
   - Revenue by age group
   - Sales by age group
 
-- 🎛️ Interactive Filters:
+-  Interactive Filters:
   - Gender  
   - Subscription Status  
   - Category  
@@ -125,7 +125,7 @@ More queries available in:
 
 ---
 
-## 📈 Key Insights
+##  Key Insights
 
 - Young adults generate the highest revenue  
 - Clothing category dominates both revenue & sales  
@@ -134,7 +134,7 @@ More queries available in:
 
 ---
 
-## ⚙️ How to Run
+##  How to Run
 
 ### 1. Clone Repository
 ```bash
@@ -164,7 +164,7 @@ source sql/customer_behaviour.sql;
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Aryan Srivastava**  
 
