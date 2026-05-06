@@ -103,28 +103,6 @@ More queries available in:
 
 ---
 
-##  Dashboard Features
-
--  KPI Cards:
-  - Total Customers (3.9K)
-  - Average Purchase Amount ($59.76)
-  - Average Rating (3.75)
-
--  Category Analysis:
-  - Revenue & sales breakdown by category
-
--  Customer Insights:
-  - Revenue by age group
-  - Sales by age group
-
--  Interactive Filters:
-  - Gender  
-  - Subscription Status  
-  - Category  
-  - Shipping Type  
-
----
-
 ##  Key Insights
 
 - Young adults generate the highest revenue  
